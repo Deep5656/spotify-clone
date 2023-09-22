@@ -1,0 +1,21 @@
+.spotify__search_head{
+    margin: 80px 0 0 40px;
+    color: white;
+}
+.spotify__search_card_collection{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.spotify__search_card_item{
+    width: 180px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: #0f0f0f;
+    margin: 30px;
+    margin-left: 40px;
+    box-shadow: rgb(0, 0, 0.24) 0 0 3px;
+  
+}
+.spotify_search_img{
+}

@@ -1,0 +1,15 @@
+<div class="spotify__top-nav">
+   
+    <div class="logo">
+        <!-- [ngStyle]="{'margin-left':search ? '0px':'-10px'}" -->
+        <div class="spotify__top-nav_focus_title">Focus</div>
+        <div class="spotify__top-nav_searchbar"><input *ngIf="search" type="search" placeholder="what you want to listen to?"></div>
+        <div class="spotify__top-nav_searchbar"><input *ngIf="!search" type="search" disabled style="background-color: #0f0f0f;border:2px solid #0f0f0f"></div>
+    </div>
+       
+
+    <div class="spotify__top-nav_auth">
+        <div class="spotify__top-nav_auth_sign-up">Sign up</div>
+        <div class="spotify__top-nav_auth_login" (click)="onNavigateToLogin()">Log in</div>
+    </div>
+</div>

@@ -1,0 +1,63 @@
+.spotify__top-nav{
+    width: 100%;
+    height: 74px;
+    background-color: #0f0f0f;
+    position: fixed;
+    top: 0px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: lightgray;
+    font-weight: bold;
+    font-size: 18px;
+    /* margin-left: -13px; */
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-left: -450px;
+}
+.spotify__top-nav_focus_title{
+    /* flex-basis: 550px; */
+    margin-left: 0px;
+    font-size: 22px;
+    color: white;
+}
+.spotify__top-nav_searchbar > input{
+    padding: 10px;
+    border-radius: 40px;
+    font-size: 13px;
+    width: 200px;
+    background-color: rgb(32, 32, 32);
+    border: 2px solid rgb(32, 32, 32);
+}
+.spotify__top-nav_searchbar > input :active{
+    border: 2px solid lightgray;
+
+}
+.spotify__top-nav_auth{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    margin-right: -200px;
+}
+.spotify__top-nav_auth_login{
+    background-color: white;
+    color: #0f0f0f;
+    padding: 10px;
+    border-radius: 40px;
+    font-weight: bold;
+    width: 110px;
+    text-align: center;
+    cursor: pointer;
+}
+.spotify__top-nav_auth_login:hover{
+    color: rgb(9, 185, 9);
+    background-color: rgb(32, 32, 32);
+}

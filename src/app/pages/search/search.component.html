@@ -1,0 +1,11 @@
+<p>search works!</p>
+
+<h4 class="spotify__search_head">Browse all</h4>
+
+<div class="spotify__search_card_collection">
+    <div class="spotify__search_card_item" *ngFor="let card of cards">
+        <h4 style="margin: 10px;color: white;">{{card.title}}</h4>
+        <img class="spotify_search_img" src={{card.image}} alt="img.logo">
+    </div>
+</div>
+

@@ -1,0 +1,47 @@
+<div class="spotify__home-container row">
+    <div class="spotify__home-container_side-bar col-2">
+        <div class="spotify__home-container_side-bar-item">
+            <img width="100px" class="m-3 text-left" src="assets/spotify-light.png" alt="spotify-light logo">
+        </div>
+        <div class="spotify__home-container_side-bar-item">
+            <a (click)="searchNotAvailable()" [routerLink]="'/homecontent'" >Home</a>
+        </div>
+        <div class="spotify__home-container_side-bar-item">
+            <a (click)="searchAvailable()" [routerLink]="'search'">Search</a>
+        </div>
+        <div class="spotify__home-container_side-bar-item">
+            <a>Your Library</a>
+        </div>
+        <div class="spotify__home-container_side-bar-item">
+            <a>Create Playlist</a>
+        </div>
+    </div>
+    <div class="spotify__home-container_playlist-container col-10">
+        <app-top-nav></app-top-nav>
+       
+<!-- 
+        <h4 style="color: white; margin:90px 0px 0px 15px;">Focus</h4>
+        <div class="playlist_collection">
+            <div class="song_card_item" *ngFor="let song of songs">
+                <app-song-card 
+                    [title]="song.title"
+                    [description]="song.description"
+                    [playlistThumbnail]="song.playlistThumbnail">
+                </app-song-card>
+            </div>
+        </div>
+
+        <h4 style="color: white; margin:20px 0px 0px 15px;">Spotify Playlist</h4>
+        <div class="playlist_collection">
+            <div class="song_card_item" *ngFor="let song of songs">
+                <app-song-card 
+                    [title]="song.title"
+                    [description]="song.description"
+                    [playlistThumbnail]="song.playlistThumbnail">
+                </app-song-card>
+            </div>
+        </div> -->
+        <router-outlet></router-outlet>
+        <!-- <app-search></app-search> -->
+    </div>
+</div>

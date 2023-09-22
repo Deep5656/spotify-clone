@@ -1,0 +1,24 @@
+<p>homecontent works!</p>
+
+
+<h4 style="color: white; margin:90px 0px 0px 15px;">Focus</h4>
+<div class="playlist_collection">
+    <div class="song_card_item" *ngFor="let song of songs">
+        <app-song-card 
+            [title]="song.title"
+            [description]="song.description"
+            [playlistThumbnail]="song.playlistThumbnail">
+        </app-song-card>
+    </div>
+</div>
+
+<h4 style="color: white; margin:20px 0px 0px 15px;">Spotify Playlist</h4>
+<div class="playlist_collection">
+    <div class="song_card_item" *ngFor="let song of songs">
+        <app-song-card 
+            [title]="song.title"
+            [description]="song.description"
+            [playlistThumbnail]="song.playlistThumbnail">
+        </app-song-card>
+    </div>
+</div>

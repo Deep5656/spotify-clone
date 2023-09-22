@@ -1,0 +1,12 @@
+.playlist_collection{
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+}
+.playlist_collection::-webkit-scrollbar{
+    width: 0;
+}
+.song_card_item{
+    margin: 10px;
+    min-width: 200px;
+}
